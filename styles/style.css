@@ -1,0 +1,41 @@
+#autoSlider {
+    width: 100%;
+    height: 372px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+
+}
+#autoSlider div {
+    float: left;    
+    margin-left: -500px;
+}
+#autoSlider div img {
+    float: left;
+    display: inline;
+}
+#autoSlider .bullets, #autoSlider .bullets li {
+    float: left;
+    display: inline;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+#autoSlider .bullets {
+    position: absolute;    
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+#autoSlider .bullets li {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    margin-left: 10px;    
+}
+#autoSlider .bullets li.active {
+    background-color:  #ffcc00;    
+}
